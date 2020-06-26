@@ -1,2 +1,2 @@
 # CursoJS
- Aulas e Exercicios do Curso de JavaScript
+ Aulas e Exercicios do Curso Básico de JavaScript
