@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciando Estudos com O DOM</title>
+
+    <style>
+        body{
+           background: rgb(113, 113, 228); 
+           color: white;
+           font: normal 12pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando Estudos com o DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>aprendendo a usar o <strong>DOM </strong></p>
+    <div>Click em mim</div>
+
+    <script>
+        //(window.document.body.style.background = "black") muda o fundo do site
+        var p1 = window.document.getElementsByTagName('p')[1]
+
+        window.document.write(p1.innerHTML)// pega o texto formatado
+        window.document.write(`<br>`+p1.innerText) // pega o texto sem formataçãp
+
+       
+    </script>
+
+</body>
+</html>

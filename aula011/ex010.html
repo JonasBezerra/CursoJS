@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dentran</title>
+
+    <style>
+        img{
+            z-index: -1;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            height: 100%;
+            width: 100%;
+
+        }
+        body{
+            
+            font-family: 'Segoe UI';
+           
+            
+            
+        }
+        section{
+            
+            box-shadow:  5px 5px 10px rgba(0, 0, 0, 0.548);
+            background-color: rgba(255, 255, 255, 0.514);
+            width: 300px;
+            height: 300px;
+            
+            color: rgba(0, 0, 0, 0.911);
+            padding: 45px; /* da espaço no [texto escrito dentro do background]*/
+            margin: 10% auto 70px auto;       
+            position: relative;  
+            text-align: center;      
+
+        }
+        div#res{
+            background-color: rgba(0, 0, 0, 0.472);
+            box-shadow:  5px 5px 10px rgba(0, 0, 0, 0.548);
+            font-family: 'Segoe UI';
+            margin-top: 32px;
+            
+        }
+        input{
+            font-size: 12px;
+           
+        }
+        h3{
+            margin-top: -10px;
+        }
+        
+        
+
+        
+    </style>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <h1>Sistema de Multas</h1>
+            <h3>Velocidade do Carro:</h3> <input type="number" name="txtVel" id="txtVel" placeholder="Velocidade">km/h
+            <input type="button" value="Verificar" class="btnVerificar">
+            <div id="res"><p> Resultado</p></div>
+        </div>
+        <img src="gggg.jpg" alt="">
+    </section>
+
+    <script>
+        window.document.querySelector('input.btnVerificar').addEventListener('click', resultado)
+        
+        function resultado() {
+ 
+           var vel = Number(window.document.getElementById('txtVel').value)
+           var res = window.document.querySelector('div#res')
+           
+           res.innerHTML = `Sua Velocidade atual é de <strong>${vel} km/h.</strong>`
+           if(vel > 60){
+               res.innerHTML += ` Voçê foi <strong>MULTADO!</strong>`
+           }
+        res.innerHTML +=  ` Dirija sempre com cinto de Segurança!`
+        } 
+    </script>
+
+</body>
+</html>
