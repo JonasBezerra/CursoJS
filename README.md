@@ -1,2 +1,2 @@
 # CursoJS
- Aulas e Exercicios do **Curso Básico de JavaScript** com o Professor @GustavoGuanabara
+ Aulas e Exercicios do **Curso Básico de JavaScript** com o Professor @gustavoguanabara
